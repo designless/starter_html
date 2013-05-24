@@ -1,12 +1,4 @@
-/*
-Theme Name: designless theme
-Theme URI: http://designless.net/wordpress/
-Description: デザインレステーマ
-Version: 0.1
-Author: Naoki Kanazawa
-Author URI: http://designless.net/
-*/
-
+@charset "UTF-8";
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -112,7 +104,7 @@ a:active {
 }
 
 /* ///////////////////////////////////////////////////////////////////
-
++Layout
 [container]
 	[header]
 	[branding]
@@ -123,6 +115,12 @@ a:active {
 			[information]
 	[footer]
 
++Plug-in
+[bxslider]
+
++Media Queries
+[Max 480px]
+[Max 600px]
 /////////////////////////////////////////////////////////////////// */
 
 
@@ -522,6 +520,11 @@ footer
     *zoom: 1;
 }
 
+
+/* =========================================================
+Plug-in : bxslider
+========================================================= */
+
 /**
  * BxSlider v4.0 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -534,10 +537,6 @@ footer
  * http://bxcreative.com
  */
 
-
-/** RESET AND LAYOUT
-===================================*/
-
 .bx-wrapper {
 	position: relative;
 	margin: 0 auto;
@@ -549,9 +548,6 @@ footer
 	display: block;
 	max-width: 100%;
 }
-
-/** THEME
-===================================*/
 
 .bx-wrapper .bx-viewport {
 	background: #fff;
@@ -574,7 +570,7 @@ footer
 	min-height: 50px;
 	width: 100%;
 	height: 100%;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
 }
 
 /* PAGER */
@@ -615,16 +611,14 @@ footer
 	background: #fff;
 }
 
-/* DIRECTION CONTROLS (NEXT / PREV) */
-
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(../images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url(../images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -650,8 +644,6 @@ footer
 	display: none;
 }
 
-/* AUTO CONTROLS (START / STOP) */
-
 .bx-wrapper .bx-controls-auto {
 	text-align: center;
 }
@@ -662,7 +654,7 @@ footer
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
+	background: url(../images/controls.png) -86px -11px no-repeat;
 	text-indent: -9999px;
 }
 
@@ -677,7 +669,7 @@ footer
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -44px no-repeat;
+	background: url(../images/controls.png) -86px -44px no-repeat;
 	text-indent: -9999px;
 }
 
@@ -685,8 +677,6 @@ footer
 .bx-wrapper .bx-controls-auto .bx-stop.active {
 	background-position: -86px -33px;
 }
-
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	width: 80%;
@@ -697,8 +687,6 @@ footer
 	right: 0;
 	width: 35px;
 }
-
-/* IMAGE CAPTIONS */
 
 .bx-wrapper .bx-caption {
 	position: absolute;
@@ -717,7 +705,11 @@ footer
 	font-family: Arial;
 }
 
-/*Media Queries*/
+
+
+/* =========================================================
+Media Queries
+========================================================= */
 @media screen and (max-width: 480px) {
 
 	#header {

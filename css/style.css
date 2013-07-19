@@ -16,8 +16,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	vertical-align: baseline;
-	font: inherit;
 	font-size: 100%;
 }
 
@@ -50,15 +48,46 @@ a:hover, a:active {
 
 img {
 	border: 0;
-	vertical-align: middle;
+	vertical-align: bottom;
 	-ms-interpolation-mode: bicubic;
+}
+
+/*helper*/
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb15 {
+	margin-bottom: 15px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
 }
 
 /*common*/
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 0.625em;
+	font-size: 0.875em;
 	font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	line-height: 1.6em;
 }
@@ -71,15 +100,14 @@ html {
 }
 
 .wrapper {
-    margin: 0 5%;
-    width: 90%;
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .inner {
-    position: relative;
-    margin: 0 5%;
     padding: 30px 0;
-    width: 90%;
+    position: relative;
 }
 
 a:link {
@@ -101,6 +129,7 @@ a:active {
 
 .fluidImage {
 	max-width: 100%;
+	height: auto;
 }
 
 /* ///////////////////////////////////////////////////////////////////
@@ -389,8 +418,9 @@ service
 #service .more a {
 	display: block;
 	float: right;
-	width: 80px;
+	width: 7em;
 	height: 20px;
+	padding: 5px;
 	background: #888;
 	color: #fff;
 	text-align: center;
@@ -504,21 +534,6 @@ footer
 	line-height: 40px;
 }
 
-
-/* helper */
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: " ";
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
 
 
 /* =========================================================
@@ -710,23 +725,27 @@ Plug-in : bxslider
 /* =========================================================
 Media Queries
 ========================================================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
 
 	#header {
 		height: auto;
-}
+	}
 
 	#header .logo {
 		float: none;
 		padding: 10px 0;
 		width: 100%;
 		text-align: center;
-}
+	}
 
-	#header .wrapper {
+	.wrapper {
 	margin: 0;
 	width: 100%;
-}
+	}
+
+	.inner {
+		padding: 30px;
+	}
 
 	nav {
 		float: none;
@@ -740,13 +759,14 @@ Media Queries
 		float: none;
 		margin: 5%;
 		width: 90%;
-}
+	}
 
 #news .sectionInner,
 #service .sectionInner,
 #information .sectionInner {
 	width: 100%;
-}
+	}
+
   .gNav > ul, .gNav > ul ul {
     display: none;
     visibility: visible;
@@ -881,7 +901,7 @@ Media Queries
 }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .gNav > ul > li > a {
     padding: 1em 2em;
   }

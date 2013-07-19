@@ -12,38 +12,13 @@
 <title>Starter Theme</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<meta property="og:title" content="Web Design Starter Theme">
-<meta property="og:type" content="website">
-<meta property="og:description" content="レスポンシブWebデザインの雛形・教材として使えるスターターテーマ">
+<meta property="og:site_name" content="Starter Theme" />
 <meta property="og:url" content="http://designless.net/starter/">
+<meta property="og:type" content="website">
 <meta property="og:image" content="http://designless.net/starter/images/og.png">
-<meta property="og:site_name" content="designless">
+<meta property="og:description" content="レスポンシブWebデザインの雛形・教材として使えるスターターキット">
 <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="images/favicon.ico">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery||document.write('<script src="js/libs/jquery/jquery-1.8.3.min.js"><\/script>');</script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-<!--[if lt IE 9]>
-<script src="js/libs/css3-mediaqueries.js"></script>
-<script src="js/libs/IE9.js"></script>
-<![endif]-->
-<!--[if IE 6]>
-<script src="js/libs/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>DD_belatedPNG.fix('img, .pngfix');</script>
-<![endif]-->
-
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'xxxxxxxxxxxxxxx']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
 </head>
 
 <body>
@@ -78,33 +53,38 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       <li><img src="images/pict03.png" alt="" /></li>
     </ul>
   </div>
+  <!-- /#branding -->
+
   <div id="content">
     <div id="news">
+      <div class="wrapper">
       <div class="inner">
         <h2>News</h2>
         <p class="all"><a href="">ALL</a></p>
         <div class="newsSection clearfix">
           <section>
-            <div class="sectionInner"> <span class="date">2013/4/15</span>
-              <h3>おせ</h3>
+            <div class="sectionInner"><span class="date">2013/4/15</span>
+              <h3>お知らせ</h3>
             </div>
           </section>
           <section>
-            <div class="sectionInner"> <span class="date">2013/4/15</span>
+            <div class="sectionInner"><span class="date">2013/4/15</span>
               <h3>お知らせの内容が入ります。お知らせの内容が入ります。</h3>
             </div>
           </section>
           <section>
-            <div class="sectionInner"> <span class="date">2013/4/15</span>
+            <div class="sectionInner"><span class="date">2013/4/15</span>
               <h3>お知らせの内容が入ります。お知らせの内容が入ります。</h3>
             </div>
           </section>
         </div>
       </div>
+      </div>
     </div>
     <!-- /#news -->
 
     <div id="service">
+      <div class="wrapper">
       <div class="inner">
         <h2>Service</h2>
         <div class="serviceSection clearfix">
@@ -134,10 +114,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
           </section>
         </div>
       </div>
+      </div>
     </div>
     <!-- /#service -->
 
     <div id="information">
+      <div class="wrapper">
       <div class="inner">
         <h2>Information</h2>
         <div class="infoSection clearfix">
@@ -157,14 +139,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
           <section class="infoContact">
             <div class="sectionInner">
               <h3>お問い合わせ</h3>
-              <a href="">contact</a> </div>
+              <p><a href="">contact</a></p>
+            </div>
           </section>
           <section class="infoSocial">
             <div class="sectionInner">
               <h3>SNS</h3>
-              social widget </div>
+              <p>social widget</p>
+            </div>
           </section>
         </div>
+      </div>
       </div>
     </div>
     <!-- /#information -->
@@ -189,5 +174,22 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </div>
 <!-- /#container -->
 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery||document.write('<script src="js/libs/jquery/jquery-1.8.3.min.js"><\/script>');</script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!--[if lt IE 9]>
+<script src="js/libs/respond.min.js"></script>
+<script src="js/libs/IE9.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/libs/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>DD_belatedPNG.fix('img, .pngfix');</script>
+<![endif]-->
+
+<script>
+//google analytics
+</script>
 </body>
 </html>

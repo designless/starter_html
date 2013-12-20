@@ -1,195 +1,69 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="ja">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Starter Theme</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta property="og:site_name" content="Starter Theme" />
-<meta property="og:url" content="http://designless.net/starter/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="http://designless.net/starter/images/og.png">
-<meta property="og:description" content="レスポンシブWebデザインの雛形・教材として使えるスターターキット">
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="images/favicon.ico">
-</head>
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<![endif]-->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property='og:locale' content='ja_JP'/>
+		<meta property="og:site_name" content="" />
+		<meta property="og:url" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="">
+		<meta property="og:description" content="">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>window.jQuery||document.write('<script src="js/jquery-1.8.3.min.js"><\/script>');</script>
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<body>
-<div id="container">
-  <div id="header">
-    <header class="wrapper clearfix">
-      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="Starter Theme" width="200" height="35"></a></h1>
-      <nav class="gNav">
-        <input type="checkbox" id="button">
-        <label for="button" onclick>Menu</label>
-        <ul class="clearfix">
-          <li> <a href="#">Item 1</a>
-            <ul>
-              <li><a href="">Sub Item 1</a></li>
-              <li><a href="">Sub Item 2</a></li>
-              <li><a href="">Sub Item 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <!-- /#header -->
+	<body class="home">
 
-  <div id="branding">
-    <ul class="slider">
-      <li><img src="images/pict01.png" alt="" /></li>
-      <li><img src="images/pict02.png" alt="" /></li>
-      <li><img src="images/pict03.png" alt="" /></li>
-    </ul>
-  </div>
-  <!-- /#branding -->
+		<header id="header">
+			<h1 class="logo">Logo</h1>
+			<nav id="gNav">
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+					<li><a href="#">Item 4</a></li>
+				</ul>
+			</nav>
+			<!-- /#gNav -->
+		</header>
+		<!-- /#header -->
 
-  <div id="content">
-    <div id="news">
-      <div class="wrapper">
-      <div class="inner">
-        <h2>News</h2>
-        <p class="all"><a href="">ALL</a></p>
-        <div class="newsSection clearfix">
-          <section>
-            <div class="sectionInner"><span class="date">2013/4/15</span>
-              <h3>お知らせ</h3>
-            </div>
-          </section>
-          <section>
-            <div class="sectionInner"><span class="date">2013/4/15</span>
-              <h3>お知らせの内容が入ります。お知らせの内容が入ります。</h3>
-            </div>
-          </section>
-          <section>
-            <div class="sectionInner"><span class="date">2013/4/15</span>
-              <h3>お知らせの内容が入ります。お知らせの内容が入ります。</h3>
-            </div>
-          </section>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- /#news -->
+		<div id="content">
 
-    <div id="service">
-      <div class="wrapper">
-      <div class="inner">
-        <h2>Service</h2>
-        <div class="serviceSection clearfix">
-          <section>
-            <div class="sectionInner">
-              <h3>サービス１</h3>
-              <img src="images/service_thumbs01.png" alt="" class="fluidImage">
-              <p>サービスの内容が入ります。サービスの内容が入ります。サービスの内容が入ります。</p>
-              <p class="more clearfix"><a href="">詳しくはこちら</a></p>
-            </div>
-          </section>
-          <section>
-            <div class="sectionInner">
-              <h3>サービス２</h3>
-              <img src="images/service_thumbs02.png" alt="" class="fluidImage">
-              <p>サービスの内容が入ります。サービスの内容が入ります。サービスの内容が入ります。</p>
-              <p class="more clearfix"><a href="">詳しくはこちら</a></p>
-            </div>
-          </section>
-          <section class="last">
-            <div class="sectionInner">
-              <h3>サービス３</h3>
-              <img src="images/service_thumbs03.png" alt="" class="fluidImage">
-              <p>サービスの内容が入ります。サービスの内容が入ります。サービスの内容が入ります。</p>
-              <p class="more clearfix"><a href="">詳しくはこちら</a></p>
-            </div>
-          </section>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- /#service -->
+			<section id="service">
+				<h2>Service</h2>
+			</section>
+			<!-- /#service -->
 
-    <div id="information">
-      <div class="wrapper">
-      <div class="inner">
-        <h2>Information</h2>
-        <div class="infoSection clearfix">
-          <section class="infoProfile">
-            <div class="sectionInner">
-              <h3>Starter Theme</h3>
-              <dl class"clearfix">
-                <dt>住所</dt>
-                <dd>東京都渋谷区</dd>
-                <dt>Tel.</dt>
-                <dd>03-0000-0000</dd>
-                <dt>Fax.</dt>
-                <dd>03-0000-0000</dd>
-              </dl>
-            </div>
-          </section>
-          <section class="infoContact">
-            <div class="sectionInner">
-              <h3>お問い合わせ</h3>
-              <p><a href="">contact</a></p>
-            </div>
-          </section>
-          <section class="infoSocial">
-            <div class="sectionInner">
-              <h3>SNS</h3>
-              <p>social widget</p>
-            </div>
-          </section>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- /#information -->
+			<section id="news">
+				<h2>News</h2>
+				<dl>
+					<dt>2014年1月10日</dt>
+					<dd>Webサイトをリニューアルしました。</dd>
+				</dl>
+			</section>
+			<!-- /#news -->
 
-  </div>
-  <!-- /#content -->
+		</div>
+		<!-- /#content -->
 
-  <div id="footer">
-    <footer class="clearfix">
-      <ul id="footNav" class="clearfix">
-        <li class="item01"><a href="">nav</a></li>
-        <li class="item02"><a href="">nav</a></li>
-        <li class="item03"><a href="">nav</a></li>
-        <li class="item04"><a href="">nav</a></li>
-        <li class="item05"><a href="">nav</a></li>
-      </ul>
-      <small>&copy; 2013 Starter Theme</small>
-    </footer>
-  </div>
-  <!-- /#footer -->
+		<footer id="footer">
+			<p><small>&copy; 2014</small></p>
+		</footer>
+		<!-- /#footer -->
 
-</div>
-<!-- /#container -->
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery||document.write('<script src="js/libs/jquery/jquery-1.8.3.min.js"><\/script>');</script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-<!--[if lt IE 9]>
-<script src="js/libs/respond.min.js"></script>
-<script src="js/libs/IE9.js"></script>
-<![endif]-->
-<!--[if IE 6]>
-<script src="js/libs/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>DD_belatedPNG.fix('img, .pngfix');</script>
-<![endif]-->
-
-<script>
-//google analytics
-</script>
-</body>
+		<script src="js/common.js"></script>
+	</body>
 </html>

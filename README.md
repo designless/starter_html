@@ -1,4 +1,4 @@
 starter_html
 ============
 
-HTML&amp;CSS Teaching Materials
+Teaching Materials of HTML&amp;CSS
